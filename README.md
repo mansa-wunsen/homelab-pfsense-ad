@@ -1,6 +1,6 @@
 # Home Lab: pfSense Router + Active Directory Domain
 
-I built this lab in VirtualBox with tasks including — setting up a real firewall, segmenting a network properly, and standing up an Active Directory domain from nothing. Everything below was built solo bar some minor assistance from AI to create the architecture image and to help me present the layout
+I built this lab in VirtualBox with tasks including — setting up a firewall, segmenting a network, and setting up an Active Directory domain, all frkm scratch. Everything below was built solo bar some minor assistance from AI to create the architecture image and to help me present the layout
 
 # What's in here
 
@@ -52,7 +52,7 @@ From there I gave the LAN a static IP (`192.168.1.1/24`) and turned on its DHCP 
 just a VM sitting on the LAN network, picking up an IP from pfSense's DHCP server. I used this machine as my test bench for reaching the pfSense dashboard and, later, for joining the domain.
 
 ### 3. Windows Server 2022 — the Domain Controller
-I deliberately installed this in Server Core, which means no desktop, no Start menu, just PowerShell. I was adviced that this is a mor eproffesional route to take
+I deliberately installed this in Server Core, which means no desktop or menu, just PowerShell. I was adviced that this is a more proffesional route to take
 
 Set a static IP (`192.168.1.10`) through the `SConfig` menu, then installed the AD DS role:
 
