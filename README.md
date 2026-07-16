@@ -132,6 +132,5 @@ The fix was to tick and enable the DNS Forwarder and confirm it showed up as a r
 - Firewall rule management
 - DNS configuration and layered troubleshooting
 - Windows Server administration via command line (Server Core)
-- Active Directory
 - Active Directory deployment and object management via PowerShell
 - Domain join and authentication verification
